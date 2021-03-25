@@ -10,6 +10,8 @@
 
 <Header/>
 
-<main>
-	<slot></slot>
-</main>
+<div class="container">
+	<main>
+		<slot></slot>
+	</main>
+</div>
