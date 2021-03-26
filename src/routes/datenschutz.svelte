@@ -73,7 +73,7 @@
       Ein Standort kann auf klick ermittelt werden, wird aber nie gespeichert
     </li>
   </ul>
-  <h2>Nutzung von Diensten Dritter</h2>
+  <!-- <h2>Nutzung von Diensten Dritter</h2>
   <p>
     Google Admob Die kostenlose Version der App benutzt den Dienst Google Admob,
     um Werbeanzeigen einzublenden. Anzeigen werden basierend auf dem von Ihnen
@@ -99,7 +99,7 @@
       href="https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active"
       >https://www.google.de/intl/de/policies/privacy/</a
     >
-  </p>
+  </p> -->
   <h2>Änderung der Datenschutzerklärung</h2>
   <p>
     Im Zuge der Weiterentwicklung der App und der Implementierung neuer
