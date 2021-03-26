@@ -4,7 +4,9 @@
 </script>
 
 <svelte:head>
-  <title>Corona-Ampel - Fallzahlen, Impfstatistik, Intensivstation und vieles mehr</title>
+  <title
+    >Corona-Ampel - Fallzahlen, Impfstatistik, Intensivstation und vieles mehr</title
+  >
 </svelte:head>
 
 <div class="container">
@@ -52,20 +54,13 @@
     <h1>dskfaslkjdhfaslkjfh</h1>
   </div>
 </div>
+
 <!-- <div>
   
-  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-  <script>
-    kofiWidgetOverlay.draw('coronaampel', {
-      'type': 'floating-chat',
-      'floating-chat.donateButton.text': 'SPENDEN',
-      'floating-chat.donateButton.background-color': '#ffffff',
-    'floating-chat.donateButton.text-color': '#323842'
-    });
-  </script>
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js' ✂prettier:content✂="">{}</script>
+  <script ✂prettier:content✂="CiAgICBrb2ZpV2lkZ2V0T3ZlcmxheS5kcmF3KCdjb3JvbmFhbXBlbCcsIHsKICAgICAgJ3R5cGUnOiAnZmxvYXRpbmctY2hhdCcsCiAgICAgICdmbG9hdGluZy1jaGF0LmRvbmF0ZUJ1dHRvbi50ZXh0JzogJ1NQRU5ERU4nLAogICAgICAnZmxvYXRpbmctY2hhdC5kb25hdGVCdXR0b24uYmFja2dyb3VuZC1jb2xvcic6ICcjZmZmZmZmJywKICAgICdmbG9hdGluZy1jaGF0LmRvbmF0ZUJ1dHRvbi50ZXh0LWNvbG9yJzogJyMzMjM4NDInCiAgICB9KTsKICA=">{}</script>
 
 </div> -->
-
 <style>
   h1 {
     display: block;
@@ -96,6 +91,12 @@
     text-align: center;
     padding: 3rem 0;
   }
+  .desktop-left {
+    animation: fadeInBuehne 1s 0.5s ease-out forwards;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    will-change: transform;
+  }
   .desktop-right {
     align-items: center;
   }
@@ -109,24 +110,33 @@
     padding: 0.5rem 2rem;
     font-size: 1.5rem;
     font-weight: 500;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-btn);
     text-transform: uppercase;
     margin-top: 0.75rem;
     margin-bottom: 1rem;
   }
-p {
-  margin:0;
-}
+  p {
+    margin: 0;
+  }
 
   .device {
+    will-change: transform;
     perspective: 10px;
     opacity: 0;
-    animation: fadeDeviceIn 2s 1s ease-out forwards;
-      top: 100px;
+    animation: fadeDeviceIn 1s 1s ease-out forwards;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    top: 100px;
   }
 
   .bg-lighter {
     background-color: var(--bg-200);
+  }
+
+  @media (max-width: 1024px) {
+    .desktop-left {
+      padding-top: 0;
+    }
   }
 
   @media (min-width: 1024px) {
@@ -135,11 +145,11 @@ p {
     }
     .desktop-wrapper {
       flex-flow: row;
-    font-size: 1.4em;
-  }
+      font-size: 1.4em;
+    }
     .column {
       text-align: left;
-    padding: 3rem;
+      padding: 3rem;
     }
   }
   @keyframes fadeDeviceIn {
@@ -149,7 +159,17 @@ p {
     }
     to {
       opacity: 1;
-      transform: scale(1.4) translate3d(0, 0%, 0);
+      transform: scale(1.4) translate3d(0, 0, 0);
+    }
+  }
+  @keyframes fadeInBuehne {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 10%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
     }
   }
 </style>

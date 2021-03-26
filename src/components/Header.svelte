@@ -57,10 +57,10 @@
   .fund {
     text-decoration: none;
     font-size: 0.7em;
-    padding: 0.5rem 1rem;
+    padding: .75rem 1rem;
     background-color: var(--bg-400);
     font-weight: bold;
-    border-radius: 4px;
+    border-radius: var(--border-radius-btn);
     text-transform: uppercase;
   }
   img {
