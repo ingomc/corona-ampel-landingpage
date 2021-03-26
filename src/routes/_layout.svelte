@@ -10,8 +10,6 @@
 
 <Header/>
 
-<div class="container">
 	<main>
 		<slot></slot>
 	</main>
-</div>

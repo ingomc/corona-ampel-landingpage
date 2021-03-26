@@ -11,7 +11,7 @@
           src="site-logo.png"
         />
       </a>
-      <a class="fund" href="https://ko-fi.com/coronaampel" target="_blank">
+      <a class="btn fund" href="https://ko-fi.com/coronaampel" target="_blank">
         Jetzt spenden&nbsp;❤️
       </a>
 
