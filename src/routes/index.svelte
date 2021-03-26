@@ -54,7 +54,7 @@
   <div class="container fadein">
     <div class="second">
       <h2>
-        <div class="fat">Mehr als nur Inzidenz</div>
+        <div class="fat">Mehr als nur Inzidenz!</div>
         <div class="light">
           Fallzahlen, Impfstatistik, Intensivstationbelegung ...
         </div>
