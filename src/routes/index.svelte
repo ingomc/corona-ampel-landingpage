@@ -61,13 +61,12 @@
       </h2>
 
 
-      <figure>
         <picture>
           <source media="(min-width: 800px)" srcset="mockups.png" sizes="100vw"/>
           <source media="(min-width: 300px)" srcset="mockups_low.png" sizes="100vw"/>
-          <source srcset="mockups_low.png" sizes="100vw"/><img src="mockups_low.png" loading="lazy" alt="Screenshots der App"/>
+          <source srcset="mockups_low.png" sizes="100vw"/>
+          <img src="mockups_low.png" loading="lazy" alt="Screenshots der App"/>
         </picture>
-      </figure>
     </div>
   </div>
 </div>
@@ -104,7 +103,7 @@
     font-size: 2.5em;
   }
   h2 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .fat {
     display: block;
