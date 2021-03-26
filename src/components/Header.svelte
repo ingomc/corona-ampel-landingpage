@@ -1,6 +1,20 @@
 <script>
 </script>
 
+<!-- <header>
+  <div class="container">
+    <div class="header">
+      <a class="logo" href="/">
+        <img width="260"
+          wrapperClass="image-wrapper"
+          alt="Logo - Corona-Ampel"
+          src="site-logo.png"
+        />
+      </a>
+    </div>
+  </div>
+</header> -->
+
 <header>
   <div class="container">
     <div class="header">
@@ -30,6 +44,7 @@
   }
   .header {
     display: flex;
+    /* justify-content: center; */
     justify-content: space-between;
     align-items: center;
     

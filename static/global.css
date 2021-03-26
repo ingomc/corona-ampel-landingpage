@@ -69,10 +69,6 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  margin: 0;
-}
-p {
-  margin:0;
 }
 
 a {
@@ -135,6 +131,6 @@ input:hover {
 
 .container {
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1200px;
   padding: 0.5rem;
 }

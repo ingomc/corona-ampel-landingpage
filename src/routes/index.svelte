@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-  <title>Sapper project template</title>
+  <title>Corona-Ampel - Fallzahlen, Impfstatistik, Intensivstation und vieles mehr</title>
 </svelte:head>
 
 <div class="container">
@@ -26,11 +26,11 @@
       <h1>
         <span class="fat">Corona-Ampel</span>
         <span class="light">
-          Inzidenz, Impffortschritt, Fallzahlen und mehr …
+          Inzidenz, Impffortschritt, Fallzahlen und mehr&nbsp;…
         </span>
       </h1>
 
-      <p><small>Ohne Download und Installation…</small></p>
+      <p><small>Ohne Download und Installation&nbsp;…</small></p>
       <div>
         <a class="btn cta" href="https://corona-ampel.netlify.app/#/">
           Jetzt starten ›
@@ -52,6 +52,19 @@
     <h1>dskfaslkjdhfaslkjfh</h1>
   </div>
 </div>
+<!-- <div>
+  
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  <script>
+    kofiWidgetOverlay.draw('coronaampel', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'SPENDEN',
+      'floating-chat.donateButton.background-color': '#ffffff',
+    'floating-chat.donateButton.text-color': '#323842'
+    });
+  </script>
+
+</div> -->
 
 <style>
   h1 {
@@ -66,7 +79,7 @@
   .light {
     display: block;
     font-weight: 200;
-    font-size: 0.8em;
+    font-size: 0.75em;
     /* line-height: .8em; */
   }
 
@@ -81,7 +94,7 @@
     flex-basis: 1;
     flex: 1;
     text-align: center;
-      padding: 3rem;
+    padding: 3rem 0;
   }
   .desktop-right {
     align-items: center;
@@ -101,6 +114,9 @@
     margin-top: 0.75rem;
     margin-bottom: 1rem;
   }
+p {
+  margin:0;
+}
 
   .device {
     perspective: 10px;
@@ -113,15 +129,17 @@
     background-color: var(--bg-200);
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .device {
       position: relative;
     }
     .desktop-wrapper {
       flex-flow: row;
-    }
+    font-size: 1.4em;
+  }
     .column {
       text-align: left;
+    padding: 3rem;
     }
   }
   @keyframes fadeDeviceIn {
