@@ -51,7 +51,7 @@
 
 <div class="bg-lighter">
   <div class="second-spacer" />
-  <div class="container">
+  <div class="container fadein">
     <div class="second">
       <h2>
         <div class="fat">Mehr als nur Inzidenz</div>
@@ -177,6 +177,14 @@
 
   .bg-lighter {
     background-color: var(--bg-200);
+  }
+
+  .fadein {
+    animation: fadeInBuehne 1s 0.5s ease-out forwards;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-delay: 1.5s;
+    will-change: transform;
   }
 
   @media (max-width: 1024px) {
