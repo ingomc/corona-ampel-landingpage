@@ -50,21 +50,60 @@
 </div>
 
 <div class="bg-lighter">
+  <div class="second-spacer" />
   <div class="container">
-    <h1>dskfaslkjdhfaslkjfh</h1>
+    <div class="second">
+      <h2>
+        <div class="fat">Mehr als nur Inzidenz</div>
+        <div class="light">
+          Fallzahlen, Impfstatistik, Intensivstationbelegung ...
+        </div>
+      </h2>
+
+
+      <figure>
+        <picture>
+          <source media="(min-width: 800px)" srcset="mockups.png" sizes="100vw"/>
+          <source media="(min-width: 300px)" srcset="mockups_low.png" sizes="100vw"/>
+          <source srcset="mockups_low.png" sizes="100vw"/><img src="mockups_low.png" loading="lazy" alt="Screenshots der App"/>
+        </picture>
+      </figure>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="container">
+    <h2>asdökfj hsdakfj hsadlkjf hasklhdf</h2>
+    <p>
+      Datenschutz ist ganz toll bei mir ...
+    </p>
+    <p>
+      Datenschutz ist ganz toll bei mir ...
+    </p>
+    <p>
+      Datenschutz ist ganz toll bei mir ...
+    </p>
+    <p>
+      Datenschutz ist ganz toll bei mir ...
+    </p>
+    <div class="second-spacer" />
   </div>
 </div>
 
 <!-- <div>
   
-  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js' ✂prettier:content✂="">{}</script>
-  <script ✂prettier:content✂="CiAgICBrb2ZpV2lkZ2V0T3ZlcmxheS5kcmF3KCdjb3JvbmFhbXBlbCcsIHsKICAgICAgJ3R5cGUnOiAnZmxvYXRpbmctY2hhdCcsCiAgICAgICdmbG9hdGluZy1jaGF0LmRvbmF0ZUJ1dHRvbi50ZXh0JzogJ1NQRU5ERU4nLAogICAgICAnZmxvYXRpbmctY2hhdC5kb25hdGVCdXR0b24uYmFja2dyb3VuZC1jb2xvcic6ICcjZmZmZmZmJywKICAgICdmbG9hdGluZy1jaGF0LmRvbmF0ZUJ1dHRvbi50ZXh0LWNvbG9yJzogJyMzMjM4NDInCiAgICB9KTsKICA=">{}</script>
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js' ✂prettier:content✂="" ✂prettier:content✂="e30=">{}</script>
+  <script ✂prettier:content✂="CiAgICBrb2ZpV2lkZ2V0T3ZlcmxheS5kcmF3KCdjb3JvbmFhbXBlbCcsIHsKICAgICAgJ3R5cGUnOiAnZmxvYXRpbmctY2hhdCcsCiAgICAgICdmbG9hdGluZy1jaGF0LmRvbmF0ZUJ1dHRvbi50ZXh0JzogJ1NQRU5ERU4nLAogICAgICAnZmxvYXRpbmctY2hhdC5kb25hdGVCdXR0b24uYmFja2dyb3VuZC1jb2xvcic6ICcjZmZmZmZmJywKICAgICdmbG9hdGluZy1jaGF0LmRvbmF0ZUJ1dHRvbi50ZXh0LWNvbG9yJzogJyMzMjM4NDInCiAgICB9KTsKICA=" ✂prettier:content✂="e30=">{}</script>
 
 </div> -->
 <style>
   h1 {
     display: block;
     padding: 0 0 1rem;
+    font-size: 2.5em;
+  }
+  h2 {
     font-size: 2.5em;
   }
   .fat {
@@ -107,7 +146,7 @@
     color: var(--info-contrast);
     text-align: center;
     text-decoration: none;
-    padding: 0.5rem 2rem;
+    padding: 1rem 2rem;
     font-size: 1.5rem;
     font-weight: 500;
     border-radius: var(--border-radius-btn);
@@ -127,6 +166,14 @@
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     top: 100px;
+  }
+
+  .second-spacer {
+    height: 4rem;
+  }
+  .second {
+    padding: 2rem 1rem;
+    text-align: center;
   }
 
   .bg-lighter {
