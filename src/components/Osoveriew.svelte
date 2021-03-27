@@ -1,4 +1,4 @@
-<h2>Als echte App zu Download</h2>
+<h2>Als echte App zum Download</h2>
 <div class="row">
   <div class="column">
     <svg

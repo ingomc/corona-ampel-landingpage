@@ -12,7 +12,7 @@ import Osoveriew from "../components/Osoveriew.svelte";
 
 <div class="container">
   <Card>
-    <p>
+    <p class="fundingtext">
       <small>
         Damit diese App weiterhin kostenlos, ohne Werbung und ohne
         Datenweitergabe an Dritte bleibt, erwäge bitte eine Spende. Vielen Dank!
@@ -183,6 +183,13 @@ import Osoveriew from "../components/Osoveriew.svelte";
     }
   }
 
+  @media (min-width: 768px) { 
+
+    .fundingtext {
+    text-align: center;
+  }
+
+  }
   @media (min-width: 1024px) {
     .device {
       position: relative;
