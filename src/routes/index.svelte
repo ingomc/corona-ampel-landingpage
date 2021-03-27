@@ -1,6 +1,7 @@
 <script>
   import Card from "../components/Card.svelte";
   import Image from "svelte-image";
+import Osoveriew from "../components/Osoveriew.svelte";
 </script>
 
 <svelte:head>
@@ -39,7 +40,7 @@
         </a>
       </div>
 
-      <p><small>Bald auch auf: Windows, MacOS, Linux</small></p>
+      <p><small><a href="#download">Bald auch auf: Windows, MacOS, Linux</a></small></p>
     </div>
     <div class="column desktop-right">
       <div class="device">
@@ -50,7 +51,7 @@
 </div>
 
 <div class="bg-lighter">
-  <div class="second-spacer" />
+  <div class="spacer" />
   <div class="container fadein">
     <div class="second">
       <h2>
@@ -71,22 +72,11 @@
   </div>
 </div>
 
-<div>
+<div id="download">
   <div class="container">
-    <h2>asdökfj hsdakfj hsadlkjf hasklhdf</h2>
-    <p>
-      Datenschutz ist ganz toll bei mir ...
-    </p>
-    <p>
-      Datenschutz ist ganz toll bei mir ...
-    </p>
-    <p>
-      Datenschutz ist ganz toll bei mir ...
-    </p>
-    <p>
-      Datenschutz ist ganz toll bei mir ...
-    </p>
-    <div class="second-spacer" />
+    <div class="spacer" />
+    <Osoveriew />
+    <div class="spacer" />
   </div>
 </div>
 
@@ -167,7 +157,7 @@
     top: 100px;
   }
 
-  .second-spacer {
+  .spacer {
     height: 4rem;
   }
   .second {
