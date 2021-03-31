@@ -35,7 +35,7 @@ import Osoveriew from "../components/Osoveriew.svelte";
 
       <p><small>Ohne Download und Installation&nbsp;…</small></p>
       <div>
-        <a class="btn cta" href="https://corona-ampel.netlify.app/#/">
+        <a class="btn cta" href="https://start.corona-ampel.app/">
           Jetzt starten ›
         </a>
       </div>
