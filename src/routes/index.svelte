@@ -6,8 +6,7 @@ import Osoveriew from "../components/Osoveriew.svelte";
 
 <svelte:head>
   <title
-    >Corona-Ampel - Fallzahlen, Impfstatistik, Intensivstation und vieles mehr</title
-  >
+    >Corona-Ampel - Fallzahlen, Impfstatistik, Intensivstation und vieles mehr</title>
 </svelte:head>
 
 <div class="container">
