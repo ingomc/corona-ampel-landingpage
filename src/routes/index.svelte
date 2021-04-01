@@ -1,6 +1,5 @@
 <script>
   import Card from "../components/Card.svelte";
-  import Image from "svelte-image";
 import Osoveriew from "../components/Osoveriew.svelte";
 </script>
 
