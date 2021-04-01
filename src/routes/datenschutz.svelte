@@ -36,7 +36,7 @@
   
 
 <div class="container">
-  <h1>Datenschutz - Corona-Ampel Website &amp; Inzidenz-Ampel App</h1>
+  <h1>Datenschutz - Corona-Ampel Website und App</h1>
   <p>
     Die Nutzung unserer Webseite/App ist in der Regel ohne Angabe
     personenbezogener Daten möglich. Nur teile der IP Adresse, niemals die
@@ -69,9 +69,9 @@
       Nur App: Favorisierte Liste der Landkreise wird anonym, nur auf dem Gerät
       gespeichert
     </li>
-    <li>
-      Ein Standort kann auf klick ermittelt werden, wird aber nie gespeichert
-    </li>
+    <!-- <li>
+      Ein Standort kann auf Klick ermittelt werden, wird aber nie gespeichert
+    </li> -->
   </ul>
   <!-- <h2>Nutzung von Diensten Dritter</h2>
   <p>
