@@ -1,11 +1,19 @@
 <script>
+  import { onMount } from "svelte";
   import Card from "../components/Card.svelte";
-import Osoveriew from "../components/Osoveriew.svelte";
+  import Osoveriew from "../components/Osoveriew.svelte";
+
+  let isAndroid = true;
+
+  onMount(async () => {
+    const ua = navigator.userAgent.toLowerCase();
+    console.log(ua);
+    isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+  });
 </script>
 
 <svelte:head>
-  <title
-    >Corona-Ampel - Fallzahlen, Impfstatistik, Intensivstation ...</title>
+  <title>Corona-Ampel - Fallzahlen, Impfstatistik, Intensivstation ...</title>
 </svelte:head>
 
 <div class="container">
@@ -38,7 +46,25 @@ import Osoveriew from "../components/Osoveriew.svelte";
         </a>
       </div>
 
-      <p><small><a href="#download">Bald auch auf: Windows, MacOS, Linux</a></small></p>
+      {#if isAndroid}
+      <p><small>Als App zum installieren:</small></p>
+      <p>
+        <a href="https://galaxy.store/ampel"
+          ><img
+            width="200"
+            src="https://img.samsungapps.com/seller/images/badges/galaxyStore/png_big/GalaxyStore_GermanyGerman.png?ver=1617105304000"
+            alt="Verfügbar in Samsung Galaxy Store"
+            style="max-width: 100%; height: auto;"
+          /></a
+        >
+      </p>
+      {/if}
+
+      <p>
+        <small
+          ><a href="#download">Bald auch auf: Windows, MacOS, Linux</a></small
+        >
+      </p>
     </div>
     <div class="column desktop-right">
       <div class="device">
@@ -59,13 +85,16 @@ import Osoveriew from "../components/Osoveriew.svelte";
         </div>
       </h2>
 
-
-        <picture>
-          <source media="(min-width: 800px)" srcset="mockups.png" sizes="100vw"/>
-          <source media="(min-width: 300px)" srcset="mockups_low.png" sizes="100vw"/>
-          <source srcset="mockups_low.png" sizes="100vw"/>
-          <img src="mockups_low.png" loading="lazy" alt="Screenshots der App"/>
-        </picture>
+      <picture>
+        <source media="(min-width: 800px)" srcset="mockups.png" sizes="100vw" />
+        <source
+          media="(min-width: 300px)"
+          srcset="mockups_low.png"
+          sizes="100vw"
+        />
+        <source srcset="mockups_low.png" sizes="100vw" />
+        <img src="mockups_low.png" loading="lazy" alt="Screenshots der App" />
+      </picture>
     </div>
   </div>
 </div>
@@ -80,8 +109,8 @@ import Osoveriew from "../components/Osoveriew.svelte";
 
 <!-- <div>
   
-  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js' ✂prettier:content✂="" ✂prettier:content✂="e30=">{}</script>
-  <script ✂prettier:content✂="CiAgICBrb2ZpV2lkZ2V0T3ZlcmxheS5kcmF3KCdjb3JvbmFhbXBlbCcsIHsKICAgICAgJ3R5cGUnOiAnZmxvYXRpbmctY2hhdCcsCiAgICAgICdmbG9hdGluZy1jaGF0LmRvbmF0ZUJ1dHRvbi50ZXh0JzogJ1NQRU5ERU4nLAogICAgICAnZmxvYXRpbmctY2hhdC5kb25hdGVCdXR0b24uYmFja2dyb3VuZC1jb2xvcic6ICcjZmZmZmZmJywKICAgICdmbG9hdGluZy1jaGF0LmRvbmF0ZUJ1dHRvbi50ZXh0LWNvbG9yJzogJyMzMjM4NDInCiAgICB9KTsKICA=" ✂prettier:content✂="e30=">{}</script>
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js' ✂prettier:content✂="" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=">{}</script>
+  <script ✂prettier:content✂="CiAgICBrb2ZpV2lkZ2V0T3ZlcmxheS5kcmF3KCdjb3JvbmFhbXBlbCcsIHsKICAgICAgJ3R5cGUnOiAnZmxvYXRpbmctY2hhdCcsCiAgICAgICdmbG9hdGluZy1jaGF0LmRvbmF0ZUJ1dHRvbi50ZXh0JzogJ1NQRU5ERU4nLAogICAgICAnZmxvYXRpbmctY2hhdC5kb25hdGVCdXR0b24uYmFja2dyb3VuZC1jb2xvcic6ICcjZmZmZmZmJywKICAgICdmbG9hdGluZy1jaGF0LmRvbmF0ZUJ1dHRvbi50ZXh0LWNvbG9yJzogJyMzMjM4NDInCiAgICB9KTsKICA=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=">{}</script>
 
 </div> -->
 <style>
@@ -143,6 +172,7 @@ import Osoveriew from "../components/Osoveriew.svelte";
   }
   p {
     margin: 0;
+    padding: .5em 0;
   }
 
   .device {
@@ -181,12 +211,10 @@ import Osoveriew from "../components/Osoveriew.svelte";
     }
   }
 
-  @media (min-width: 768px) { 
-
+  @media (min-width: 768px) {
     .fundingtext {
-    text-align: center;
-  }
-
+      text-align: center;
+    }
   }
   @media (min-width: 1024px) {
     .device {

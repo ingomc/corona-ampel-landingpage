@@ -16,7 +16,8 @@
       /></svg
     >
     <h3>Android</h3>
-    <p>Coming soon ...</p>
+    <a href="https://galaxy.store/ampel"><img width="200" src="https://img.samsungapps.com/seller/images/badges/galaxyStore/png_big/GalaxyStore_GermanyGerman.png?ver=1617105304000" alt="Verfügbar in Samsung Galaxy Store" style="max-width: 100%; height: auto;"></a>
+    <!-- <p>Coming soon ...</p> -->
   </div>
   <div class="column">
     <svg
