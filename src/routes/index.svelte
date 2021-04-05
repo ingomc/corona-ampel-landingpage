@@ -17,18 +17,18 @@
 </svelte:head>
 
 <div class="container">
-  <Card>
+  <!-- <Card>
     <p class="fundingtext">
       <small>
         Damit diese App weiterhin kostenlos, ohne Werbung und ohne
         Datenweitergabe an Dritte bleibt, erwäge bitte eine Spende. Vielen Dank!
-        <!-- Ich habe mehrere Monate diese App programmiert. Sie
+         Ich habe mehrere Monate diese App programmiert. Sie
           ist kostenlos, ohne Werbung, keine Cookies, keine Daten werden
           weitergegeben, alles ist Self-Hosted. Viel Liebe, Schweiss und Tränen
-          sind hier reingeflossen… eine kleine Spende wäre deshalb echt toll! -->
+          sind hier reingeflossen… eine kleine Spende wäre deshalb echt toll! 
       </small>
     </p>
-  </Card>
+  </Card> -->
 
   <div class="desktop-wrapper">
     <div class="column desktop-left">
